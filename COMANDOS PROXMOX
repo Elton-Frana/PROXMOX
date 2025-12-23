@@ -1,14 +1,14 @@
 Comandos Proxmox 
 
 
-Listar todas as VMs            qm list
-Criar nova VM                  qm create <ID> --name <nome> --memory <MB> --net0 virtio,bridge=vmbr0
-Iniciar VM                     qm start <ID>
-Parar VM                       qm stop <ID>
-Reiniciar VM                   qm reboot <ID>
-Deletar VM                     qm destroy <ID>
-Ver status da VM               qm status <ID>
-Mostrar configuração da VM     qm config <ID>
-Clonar VM                      qm clone <ID-origem> <ID-destino> --name <novo-nome>
-Restaurar backup .vma          qmrestore <arquivo.vma> <ID>
+Listar todas as VMs           # qm list
+Criar nova VM                 # qm create <ID> --name <nome> --memory <MB> --net0 virtio,bridge=vmbr0
+Iniciar VM                    # qm start <ID>
+Parar VM                      # qm stop <ID>
+Reiniciar VM                  # qm reboot <ID>
+Deletar VM                    # qm destroy <ID>
+Ver status da VM              # qm status <ID>
+Mostrar configuração da VM    # qm config <ID>
+Clonar VM                     # qm clone <ID-origem> <ID-destino> --name <novo-nome>
+Restaurar backup .vma         # qmrestore <arquivo.vma> <ID>
 
