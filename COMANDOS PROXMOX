@@ -13,6 +13,6 @@ Clonar VM                     # qm clone <ID-origem> <ID-destino> --name <novo-n
 Restaurar backup .vma         # qmrestore <arquivo.vma> <ID>
 
 RESIZE LVM
-
+lvremove /dev/pve/data
 lvextend -l +100%FREE /dev/pve/root
 resize2fs /dev/pve/root
