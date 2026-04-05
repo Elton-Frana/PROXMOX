@@ -12,3 +12,7 @@ Mostrar configuração da VM    # qm config <ID>
 Clonar VM                     # qm clone <ID-origem> <ID-destino> --name <novo-nome>
 Restaurar backup .vma         # qmrestore <arquivo.vma> <ID>
 
+RESIZE LVM
+
+lvextend -l +100%FREE /dev/pve/root
+resize2fs /dev/pve/root
